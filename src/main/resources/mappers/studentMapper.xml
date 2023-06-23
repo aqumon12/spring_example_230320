@@ -4,7 +4,7 @@
 
 <mapper namespace="com.example.lesson04.dao.StudentMapper">
 	<insert id="insertStudent" 
-	parameterType="com.example.lesson04.domain.Student"
+	parameterType="map"
 	useGeneratedKeys="true" keyProperty="id">
 		INSERT INTO `new_student`
 		(
@@ -29,7 +29,7 @@
 	<select id="selectStudentById" resultType="com.example.lesson04.domain.Student">
 		SELECT
 			`id`
-			`name`
+			,`name`
 			,`phoneNumber`
 			,`email`
 			,`dreamJob`
