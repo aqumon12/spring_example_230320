@@ -11,7 +11,7 @@
 <body>
 	<c:set var="number" value="12345678" />
 	<h1>숫자 출력</h1>
-	<fmt:formatNumber value="n${number}" />
+	<fmt:formatNumber value="${number}" />
 	
 	<h1>Type</h1>
 	숫자: <fmt:formatNumber value="${number}" type="number" /><br>
